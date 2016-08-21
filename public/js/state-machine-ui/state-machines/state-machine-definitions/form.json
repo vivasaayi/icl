@@ -1,0 +1,32 @@
+{
+  "name": "form",
+  "initialState": "FormRenderer",
+  "states": [
+    {
+      "name": "FormRenderer",
+      "actions": [
+        {
+          "name": "smOkClose",
+          "stack": "pop"
+        },
+        {
+          "name": "smCancelClose",
+          "stack": "pop"
+        },
+        {
+          "name": "smGoBack"
+        },
+        {
+          "name": "smCloseAndGoBack"
+        },
+        {
+          "name": "smOpenItem",
+          "targetState": "FormRenderer"
+        },
+        {
+          "name": "smOpenModel"
+        }
+      ]
+    }
+  ]
+}

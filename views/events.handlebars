@@ -1,0 +1,31 @@
+
+<span class="btn btn-success fileinput-button">
+    <i class="glyphicon glyphicon-plus"></i>
+    <span>Add files...</span>
+    <!-- The file input field used as target for the file upload widget -->
+    <input id="fileupload" type="file" name="files[]" multiple>
+</span>
+
+<form action="/events" method="post" enctype="multipart/form-data">
+    <input type="text" name="11">
+    <input type="text" name="22">
+    <input type="text" name="33">
+    Select image to upload:
+    <input type="file" name="fileToUpload" id="fileToUpload" multiple>
+    <input type="submit" name="submit">
+</form>
+
+<script>
+
+//$(function () {
+//    $('#fileupload').fileupload({
+//        dataType: 'json',
+//        done: function (e, data) {
+//            $.each(data.result.files, function (index, file) {
+//               $('<p/>').text(file.name).appendTo(document.body);
+//            });
+//        }
+//    });
+});
+
+</script>

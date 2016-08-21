@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Register your Church - Indian Christian Literature</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/iconFont.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/metro-bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/metro-bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/js/bb-grid/bbGrid.css" rel="stylesheet" type="text/css" />
+    <link href="css/site.css" rel="stylesheet" type="text/css" />
+
+    <script src="assets/js/jquery/jquery.min.js" type="text/javascript"></script>
+    <script src="assets/js/jquery/jquery.widget.min.js" type="text/javascript"></script>
+    <script src="assets/js/jquery/jquery.mousewheel.js" type="text/javascript"></script>
+    <script src="assets/js/prettify/prettify.js" type="text/javascript"></script>
+    <script src="assets/js/metro/metro.min.js" type="text/javascript"></script>
+    <script src="assets/js/moment.min.js" type="text/javascript"></script>
+    <script src="assets/js/tamil-writer.js" type="text/javascript"></script>
+    <script data-main="js/requirejsconfig" src="assets/js/requires/require.js" type="text/javascript"></script>
+</head>
+<body class="metro">
+    <div class="container" style="height: 100%">
+        <div class="grid fluid show-grid">
+            <div class="row">
+                <div class="span2"></div>
+                <div class="span8">
+                    <form action="/registerchurch" method="post">
+                        <fieldset>
+                            <legend>Register your church</legend>
+                            <label>Church Name</label>
+                            <div class="input-control text" data-role="input-control">
+                                <input name="username" type="text" placeholder="type text" autocomplete="off">
+                                <button class="btn-clear" tabindex="-1" type="button"></button>
+                            </div>
+                            <label>Category</label>
+                            <div class="input-control select">
+                                <select>                                    
+                                    <option>CSI</option>                                    
+                                    <option>RC</option>                                    
+                                    <option>AG</option>
+                                    <option>Pentecostal</option>
+                                    <option>Lutheren</option>
+                                    <option>ECI</option>
+                                    <option>Salvation Army</option>
+                                    <option>Seventh Day Adventists</option>
+                                </select>                                
+                            </div>
+                            <label>City</label>
+                            <div class="input-control text" data-role="input-control">
+                                <input name="city" type="text" placeholder="type text" autocomplete="off">
+                                <button class="btn-clear" tabindex="-1" type="button"></button>
+                            </div>
+                            <label>District</label>
+                            <div class="input-control text" data-role="input-control">
+                                <input name="city" type="text" placeholder="type text" autocomplete="off">
+                                <button class="btn-clear" tabindex="-1" type="button"></button>
+                            </div>
+                            <label>State</label>
+                            <div class="input-control select">
+                                <select>
+                                    <option>Tamil Nadu</option>
+                                    <option>Kerala</option>
+                                    <option>Karnataka</option>
+                                    <option>Andhra Pradesh</option>                                    
+                                </select>
+                            </div>
+                            {{{ recaptcha_form }}}
+                            <input type="submit" value="Submit">
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="span2"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

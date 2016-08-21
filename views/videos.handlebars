@@ -1,0 +1,37 @@
+<h1>
+    <a href="/"><i class="mif-arrow-left fg-darker smaller"></i></a>
+    Videos<small class="on-right"></small>
+</h1>
+
+{{#if error}}
+    <div class="notice">
+        {{error}}
+    </div>
+{{/if}}
+
+<div class="grid fluid">
+{{#lyrics}} 
+    <div class="row border  bd-darkPink">       
+        <div class="span12">
+            <div class="row">
+                {{name}}
+            </div>
+            <div class="row">
+            {{#youTube}}            
+                <div class="tile double bg-amber">
+                    <a target="_blank" href="http://www.youtube.com/watch?v={{url}}">
+                        <div class="tile-content image">
+                            <img src="http://img.youtube.com/vi/{{url}}/0.jpg">
+                        </div>
+                        <div class="brand bg-transparent">
+                            <span class="label fg-white">Play</span>
+                            <div class="badge bg-darkRed playing"></div>
+                        </div>                         
+                    </a>
+                </div>            
+            {{/youTube}}
+            </div>
+        </div>
+    </div>       
+{{/lyrics}}
+</div> 

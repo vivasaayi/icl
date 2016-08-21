@@ -1,0 +1,52 @@
+<h1>
+    <a href="/"><i class="mif-arrow-left fg-darker smaller"></i></a>
+    Lyrics<small class="on-right"></small>
+</h1>
+
+{{#if error}}
+    <div class="notice">
+        {{error}}
+    </div>
+{{/if}}
+
+<div class="grid">
+    <div class="row cells3">
+        {{#lyrics}}
+        <div class="cell">
+            <div class="panel">
+                <div class="content">
+                    <span class="title">{{name}}</span>
+                    <div>{{author}}</div>
+                    <div>
+                        <a href="View">View</a>
+                        <a href="Edit">Edit</a>
+                        <a href="Delete">Delet</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{/lyrics}}
+    </div>
+</div>
+
+
+<table class="table striped bordered hovered">
+    <thead>
+    <tr>
+        <th class="text-left">Name</th>
+        <th class="text-left">Author</th>
+        <th class="text-left">Videos</th>
+        <th class="text-left">Music</th>
+    </thead>
+
+    <tbody> 
+        {{#lyrics}}
+            <tr class="">
+                <td><a href="/main/lyrics/{{_id}}-{{name}}">{{name}}</a></td>
+                <td class="right">{{author}}</td>
+                <td class="right">{{videos.length}}</td>
+                <td class="right">{{musics.length}}</td>
+            </tr>
+        {{/lyrics}}
+    </tbody>
+</table>

@@ -1,0 +1,63 @@
+{
+  "name": "tabbedApp",
+  "initialState": "generic",
+  "states": [
+    {
+      "name": "generic",
+      "targetItem": "Dashboard",
+      "actions": [
+        {
+          "name": "smOkClose",
+          "stack": "pop"
+        },
+        {
+          "name": "smCancelClose",
+          "stack": "pop"
+        },
+        {
+          "name": "smGoBack"
+        },
+        {
+          "name": "smCloseAndGoBack"
+        },
+        {
+          "name": "smOpenItem",
+          "targetState": "Form"
+        },
+        {
+          "name": "smOpenList",
+          "targetState": "Form"
+        },
+        {
+          "name": "smOpenModel"
+        }
+      ]
+    },
+    {
+      "name": "Form",
+      "actions": [
+        {
+          "name": "smOkClose",
+          "stack": "pop"
+        },
+        {
+          "name": "smCancelClose",
+          "stack": "pop"
+        },
+        {
+          "name": "smGoBack"
+        },
+        {
+          "name": "smCloseAndGoBack"
+        },
+        {
+          "name": "smOpenItem",
+          "targetState": "Form"
+        },
+        {
+          "name": "smOpenModel"
+        }
+      ]
+    }
+  ]
+}

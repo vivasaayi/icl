@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Indian Christian Literature</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="assets/metro/build/css/metro.css" rel="stylesheet" type="text/css" />
+    <link href="assets/metro/build/css/metro-icons.css" rel="stylesheet" type="text/css" />
+
+    <script src="assets/jquery/dist/jquery.js" type="text/javascript"></script>
+    <script src="assets/metro/build/js/metro.js"></script>
+    <script src="/js/validator.js"></script>
+</head>
+<body>
+    <div class="container" style="height: 100%">
+        <div class="grid">
+            <div class="row cells12">
+                <div class="cell colspan3"></div>
+                <div class="cell colspan6">
+                    <form action="/login" method="post">
+                        <h1 class="text-light">Login</h1>
+                        <hr />
+
+                        <div class="grid">
+                            <div class="row cells1">
+                                <div class="cell">
+                                    <label for="username">User Name</label>
+                                    <div class="input-control text full-size" data-role="input-control">
+                                        <input name="username" type="text" autocomplete="off">
+                                        <button class="button helper-button clear" tabindex="-1" type="button"><span class="mif-cross"></span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cell">
+                                <label for="password">Password</label>
+                                <div class="input-control password full-size" data-role="input-control">
+                                    <input name="password" type="password" placeholder="type password" autofocus="">
+                                    <button class="button helper-button clear" tabindex="-1" type="button"><span class="mif-cross"></span></button>
+                                </div>
+                            </div>
+                            <div class="cell">
+                                {{{ recaptcha_form }}}
+                            </div>
+                        </div>
+                        
+                        <input type="submit" value="Submit">
+                        <a href="/registeruser">New user? Register here.</a>
+                    </form>
+                </div>
+                <div class="cell colspan3"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

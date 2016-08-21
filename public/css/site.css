@@ -1,0 +1,96 @@
+
+.panel-heading{
+    border-bottom: 5px solid;
+    font-weight: bold;
+}
+
+.table-bordered{
+    width: 100%;
+}
+
+.page-content {
+    padding-top: 48px;
+}
+
+.summaryItem {
+    padding: 2px; 
+}
+
+.versepicture {
+  margin: 10px;
+  width: 640px;
+  height: 480px;
+  float: left;
+  background: url(http://localhost:4000/images/tiles-bg-2.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.pictureoverlay {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 4px 8px;
+  color: white;
+  margin: 0;
+  font-size: 24px;
+}
+
+.no-bottom-margin {
+  margin-bottom: 0px;
+  padding-bottom: 20px;
+}
+
+footer.no-top-margin {
+  margin-top: 0px;
+  padding-top: 20px;
+}
+
+.card .card-action a {
+  color: #FF5722
+}
+
+.card .card-action a:hover {
+  color: #ffab91
+}
+
+.page-title {
+  letter-spacing: .3rem
+}
+
+.card-action-buttons {
+    margin: -26px 10px 0px 0px;
+    text-align: right;
+}
+
+ul.card-action-buttons li {
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.btn-price {
+    width: 65px;
+    height: 65px;
+    font-weight: 600;
+    font-size: 1.0rem;
+    line-height: 65px;
+    margin: 10px;
+    position: absolute;
+    top: 0px;
+    letter-spacing: 0px;
+}
+
+.card .btn-floating {
+  border-radius: 0%;
+}
+
+span.title {
+  width:75%;
+  display: inline-block;
+}
+
+.collection {
+    height: 500px;
+    overflow-y: scroll;
+}
